@@ -2,8 +2,12 @@
 import requests
 import pandas as pd
 import time
+import os
+from dotenv import load_dotenv
 
 # -------------------- CONFIG --------------------
+load_dotenv()
+API_KEY = os.getenv("OWM_API_KEY")
 LOCATIONS_FILE = "data/global_locations_cleaned.csv"
 OUTPUT_FILE = "data/pollution_data.csv"
 API_KEY = "e0f3cf0d7c2c77cb00a6e0d258cee192"  # your OpenWeather API key

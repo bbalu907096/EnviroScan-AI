@@ -1,9 +1,13 @@
 import requests
 import pandas as pd
 import time
+import os
+from dotenv import load_dotenv
+load_dotenv()
+API_KEY = os.getenv("OPENAQ_API_KEY")
 
 BASE_URL = "https://api.openaq.org/v3/locations"
-API_KEY = "8ecb7a70686c9052a14f9130d69679e3816fc99ca476a2fee7df4a08dc2e5dae"
+
 
 page = 1
 limit = 100

@@ -6,8 +6,11 @@ import pandas as pd
 import csv
 import ast
 import shutil
+from dotenv import load_dotenv
+load_dotenv()
+API_KEY = os.getenv("OWM_API_KEY")
 
-API_KEY = "e0f3cf0d7c2c77cb00a6e0d258cee192"
+
 LOCATIONS_FILE = "data/global_locations_cleaned.csv"
 WEATHER_FILE = "data/weather_data.csv"
 BACKUP_FILE = WEATHER_FILE + ".bak"

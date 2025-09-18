@@ -5,8 +5,10 @@ import requests
 import time
 import os
 import ast
+from dotenv import load_dotenv
+load_dotenv()
 
-API_KEY = "e0f3cf0d7c2c77cb00a6e0d258cee192"  # Replace with your own key
+API_KEY = os.getenv("OWM_API_KEY")
 LOCATIONS_FILE = "data/global_locations_cleaned.csv"
 WEATHER_FILE = "data/weather_data.csv"
 

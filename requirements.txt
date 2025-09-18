@@ -26,3 +26,4 @@ xgboost
 folium
 streamlit_folium
 streamlit_autorefresh
+python-dotenv
