@@ -11,7 +11,7 @@ import xgboost as xgb
 import joblib
 
 # ----------------- LOAD DATA -----------------
-INPUT_FILE = "data/labeled_data.csv"
+INPUT_FILE = "data/labeled_data_new.csv"
 df = pd.read_csv(INPUT_FILE)
 print(f"🔹 Loaded labeled dataset: {df.shape}")
 

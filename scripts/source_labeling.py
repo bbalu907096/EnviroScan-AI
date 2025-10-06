@@ -1,8 +1,8 @@
 import pandas as pd
 import numpy as np
 
-INPUT_FILE = "data/cleaned_features.csv"
-OUTPUT_FILE = "data/labeled_data.csv"
+INPUT_FILE = "data/cleaned_features_new.csv"
+OUTPUT_FILE = "data/labeled_data_new.csv"
 
 # ----------------- LOAD DATA -----------------
 df = pd.read_csv(INPUT_FILE)

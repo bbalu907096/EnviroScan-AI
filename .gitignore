@@ -6,8 +6,7 @@ env/
 # Model files
 *.pkl
 
-# Data files
-*.csv
+
 
 # Streamlit / Python cache
 __pycache__/
