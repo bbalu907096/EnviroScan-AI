@@ -11,7 +11,11 @@ st.set_page_config(layout="wide", page_title="Pollution Source Dashboard")
 st.title("🌍 Pollution Source Dashboard")
 
 # ----------------- LOAD DATA -----------------
+<<<<<<< HEAD
 df = pd.read_csv("/Users/keerthi.thatikonda/Desktop/EnviroScan/data/labeled_data.csv")
+=======
+df = pd.read_csv("data/labeled_data.csv")
+>>>>>>> e49ab38c4c8e361850e2c0dd64c76f356c6f68d4
 df = df.dropna(subset=["latitude", "longitude", "aqi"])  # ensure no NaNs
 
 # ----------------- SIDEBAR FILTERS -----------------
